@@ -1,0 +1,187 @@
+body{
+    
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+header h1{
+    text-align: center;
+    
+    
+}
+    h2{
+        text-align: center;
+        margin-top: 35px;
+    }
+    header{
+        height: 100px;
+        background-color: #9ebeff;
+    }
+#logo{
+    height: 100px;
+    position: absolute;
+    
+}
+#nav{
+    height: 80px;
+    background-color: #9ebeff;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu{
+    display: flex;
+    margin-right:40px;
+    list-style: none;
+    
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    width: max-content;
+}
+.nav-link{
+    text-decoration: none;
+    color: #ffff;
+    padding: 5px 10px;
+    border-radius: 2px; 
+    
+}
+.nav-link:hover{
+    background:none;
+    color: #83c5f7 ;
+}
+.nav-toggle{
+color: #ffff;
+background: none;
+border: none;
+font-size: 30px; 
+padding: 0px 20px;
+line-height: 60px;
+display: none;
+
+}
+
+.cartas{
+    display: flex;
+    margin: 150px;
+}
+.card{
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 10px #000;
+    transition:all 400ms ease;
+    max-height: 560px;
+    overflow: auto;
+   
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px #0001;
+    transform: translateY(-3%);
+}
+.card-body{
+    text-align: center;
+    background-color: #b6f8f6;
+    width:  100%;
+
+    min-height: 550px;
+    
+   
+   
+    
+}
+#larga{
+    overflow-y: auto;
+    max-height: 634;
+}
+.card-body h6{
+    text-align: left;
+}
+.card-body img{
+    width: 250px;
+    height: 300px;
+}
+.precio{
+    display: inline;
+    background-color: yellow;
+    text-align: left;
+}
+#segunda-linea{
+    margin-top: 30px;
+}
+@media(min-width: 768px){
+    .card-body img{
+        width: 100%;
+    }
+    .card-body{
+        width: 100%;
+    }
+}
+@media(max-width: 768px){
+    .header{
+    height: 60px ;
+}
+.nav-menu{
+    flex-direction: column;
+    background-color: #2c3e50;
+    align-items: center;
+    margin-right: 20px;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 100px);
+    overflow-y:auto;
+    left: 100%;
+    transition: left 0.3s;
+    
+}
+.card-body img{
+    width: 100%;
+}
+.nav-toggle{
+    display: block;
+}
+.nav-menu_visible{
+    left: 0%;
+    margin-bottom: 200px;
+    margin-top: 50px;
+}
+.card-body{
+    text-align: center;
+    background-color: #b6f8f6;
+    width:  100%;
+    height: 25%;
+    flex-wrap: wrap;
+}
+    
+
+}
+
+
+.carousel-control-prev{
+    color: #000;
+}
+.footer-container-body{
+display: grid;
+width: 100%;
+grid-template-rows: auto auto;
+grid-template-columns: 50% 50%;
+}
+.footer-column1{ 
+    text-align: center;
+    
+    
+}
+.footer-column2{ 
+    text-align: center;
+    
+}
+
+footer{
+    background-color: #6699ff;
+}
